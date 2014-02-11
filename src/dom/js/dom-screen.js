@@ -344,7 +344,7 @@ Y.mix(Y_DOM, {
             if (offsetDir === 'right') {
                 x = Y_DOM.winWidth() - (xy[0] + parseInt(Y_DOM.getComputedStyle(node, 'width'), 10));
 
-                if (!delta[0]) {
+                if (!delta[0] && !noRetry) {
                     noRetry = false;
                 }
             }
